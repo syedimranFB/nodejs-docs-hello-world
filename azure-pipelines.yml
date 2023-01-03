@@ -1,0 +1,6 @@
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'vmcicd'
+    runOptions: 'commands'
+    commands: 'sudo rm -rf nodejs-docs-hello-world/ ; git clone https://github.com/pitchaimuthufb/nodejs-docs-hello-world.git ;'
+    readyTimeout: '20000'
